@@ -16,7 +16,7 @@ server = app.server
 #fig = px.line(machinedata, x = "Timestamp", y=  "Coolant")
 
 app.layout = html.Div([
-    html.H2('Development Dashboard')#,
+    html.H2('Development Dashboard'),
     #dcc.Graph(
         #figure = fig,
         #id = 'devgraph'
