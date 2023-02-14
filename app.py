@@ -17,12 +17,18 @@ server = app.server
 
 app.layout = html.Div([
     html.H2('Development Dashboard'),
+    dcc.Dropdown(['LA', 'NYC', 'MTL'],
+        'LA',
+        id='dropdown'
+    ),
     #dcc.Graph(
         #figure = fig,
         #id = 'devgraph'
    # ),
     html.Div(id='display-value')
 ])
+
+
 
 
 if __name__ == '__main__':
