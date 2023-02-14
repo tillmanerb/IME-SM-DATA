@@ -10,17 +10,17 @@ app = Dash(__name__, external_stylesheets=external_stylesheets)
 
 server = app.server
 
-machinedata = pd.read_csv('out.csv')
+#machinedata = pd.read_csv('out.csv')
 
 #drawing visual #1
-fig = px.line(machinedata, x = "Timestamp", y=  "Coolant")
+#fig = px.line(machinedata, x = "Timestamp", y=  "Coolant")
 
 app.layout = html.Div([
-    html.H2('Development Dashboard'),
-    dcc.Graph(
-        figure = fig,
-        id = 'devgraph'
-    ),
+    html.H2('Development Dashboard')#,
+    #dcc.Graph(
+        #figure = fig,
+        #id = 'devgraph'
+   # ),
     html.Div(id='display-value')
 ])
 
