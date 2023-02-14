@@ -17,7 +17,7 @@ server = app.server
 
 app.layout = html.Div([
     html.H2('Development Dashboard'),
-    dcc.Dropdown(['LA', 'NYC', 'MTL'],
+    dcc.Dropdown(['LA', 'YC', 'MTL'],
         'LA',
         id='dropdown'
     ),
